@@ -1,0 +1,22 @@
+{
+  "name": "calculator",
+  "version": "1.0.0",
+  "description": "this is a calcultor web app.",
+  "main": "calculator.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/saloni2811/Calculator.git"
+  },
+  "author": "\"Saloni Singh\"",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/saloni2811/Calculator/issues"
+  },
+  "homepage": "https://github.com/saloni2811/Calculator#readme",
+  "dependencies": {
+    "express": "^4.18.2"
+  }
+}
