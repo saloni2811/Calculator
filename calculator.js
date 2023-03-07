@@ -1,14 +1,19 @@
 const express = require("express");
+const bodyParser = require("body-parser");
+
 const app = express();
+app.use(bodyParser.urlencoded({extended : true}));
 
 app.get("/", function(req, res){
-    res.send ("hello");
+    res.sendFile (__dirname + "/index.html");
 });
-app.get("/contact", function(req, res){
-    res.send ("conatct no. : 9999999999");
-});
-app.get("/about", function(req, res){
-    res.send ("Saloni Singh UG");
+
+app.post("/", function(req,res){
+    var num1 = Number(req.body.num1);
+    var num2 = Number(req.body.num2);
+    var result = num1+num2;
+
+    res.send("The result is : " + result);
 });
 
 app.listen(5500, function(){
